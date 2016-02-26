@@ -138,18 +138,24 @@ task.
 
     <!-- The pdf section -->
     <div class="row">
-        <div id="mypdf">
-            <iframe id="pdfImage" width="75%" height="400px" class="pdf" src=""></iframe>
+        <div class="col-md-6">
+            <div id="mypdf">
+                <iframe id="pdfImage" width="75%" height="400px" class="pdf" src=""></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Please help transcribe the entries:</h4>
+            <div id="magicMountainTable" class="handsontable"></div>
+            <button class="btn btn-success btn-answer" value='Yes'>
+                Submit your dates
+            </button>
         </div>
     </div>
     <!-- End of pdf section -->
     <!-- The data entry section using html table -->
     <div class="row">
-        <h4>Please help transcribe the entries:</h4>
-        <div id="magicMountainTable" class="handsontable"></div>
-        <button class="btn btn-success btn-answer" value='Yes'>
-            Submit your dates
-        </button>
+
         <!-- Feedback items for the user -->
         <p>
             You are working now on task: <span id="task-id" class="label label-warning">#</span>
@@ -216,6 +222,7 @@ task.
 
 
 
+
 </script>
 
 <!-- Step through modals -->
@@ -248,6 +255,7 @@ task.
 	}
 	showStep('next');
 	$("#modal").modal('show');
+
 </script>
 
 <!-- Load user progress -->
@@ -341,6 +349,7 @@ task.
 		}
 	});
 	pybossa.run('magicMountain');
+
 
 
 
