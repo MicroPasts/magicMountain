@@ -138,15 +138,24 @@ task.
 
     <!-- The pdf section -->
     <div class="row">
+        <h4>Please help transcribe the entries:</h4>
+    </div>
+    <div class="row">
         <div class="col-md-6">
             <div id="mypdf">
-                <iframe id="pdfImage" width="75%" height="400px" class="pdf" src=""></iframe>
+                <iframe id="pdfImage" class="pdf" src=""></iframe>
             </div>
         </div>
 
         <div class="col-md-6">
-            <h4>Please help transcribe the entries:</h4>
             <div id="magicMountainTable" class="handsontable"></div>
+            <div class="comments">
+                <div class="form-group">
+                    <label class="control-label" for="comments">Transcriber's Comments</label>
+                    <textarea class="form-control" rows="5" id="comments" name="comments"
+                              placeholder="Add any comments you have"></textarea>
+                </div>
+            </div>
             <button class="btn btn-success btn-answer" value='Yes'>
                 Submit your dates
             </button>
@@ -306,7 +315,7 @@ task.
 			var data = [[]];
 			var config = {
 				data : data,
-				minRows : 5,
+				minRows : 25,
 				minCols : 8,
 				minSpareRows : 1,
 				minSpareCols : 0,
