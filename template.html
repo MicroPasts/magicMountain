@@ -339,11 +339,13 @@ task.
 					var data = handsontable.getData();
 					console.log(data);
 					task.answer = data;
+					task.answer.comments = $("#comments").val();
 					console.log(task.answer);
 					pybossa.saveTask(task.id, task.answer).done(function() {
 						$("html, body").animate( {scrollTop : 0 }, "slow");
 						$("#success").fadeIn(500).fadeOut(500);
 						$("#loading").fadeIn(500).fadeOut(500);
+						$('#comments').val('');
 						deferred.resolve();
 					});
 				} else {
@@ -358,10 +360,6 @@ task.
 		}
 	});
 	pybossa.run('magicMountain');
-
-
-
-
 </script>
 
 <style type="text/css">
