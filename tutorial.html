@@ -8,22 +8,60 @@
 
             <!-- Step 1 of the tutorial -->
             <div id="0" class="modal-body" style="display:none">
-               <!-- Tutorial text 1 here -->
+                <h4>Information needed</h4>
+                <p>
+                    This project requires your help to capture the data held within the PDF scans. It is a very
+                    straightforward tabulation exercise. DMNS would like your help to transcribe the following fields:
+                </p>
+                <ol>
+                    <li>Cat No. (Catalogue Number)</li>
+                    <li> North (The excavation units are named by their northing and easting. For example, 304N/306E)
+                    </li>
+                    <li>East</li>
+                    <li>L (Level)</li>
+                    <li>Depth (lowest depth of level)</li>
+                    <li>FS No. (Field Specimen Number)</li>
+                    <li>S No. (Specimen Number)</li>
+                    <li>Description</li>
+                </ol>
             </div>
 
             <!-- Step 2 of the tutorial -->
             <div id="1" class="modal-body" style="display:none">
-                <!-- Tutorial text 2 here -->
+                <p>
+                    On the catalogue forms, the " (or ditto mark) means that the information in this box is the same as
+                    the information from the box directly above the ".
+                </p>
+                <p>
+                    <strong>Please enter the number or descriptive information from above and not the ".</strong>
+                </p>
             </div>
 
             <!-- Step 2 of the tutorial -->
             <div id="2" class="modal-body" style="display:none">
-                <!-- Tutorial text 3 here -->
+                <p>
+                    The catalogue entry will have either a FS or S number, not both. FS numbers were assigned to
+                    artifacts found in each level of excavation in the field. S numbers were assigned to bulk soil
+                    samples that were later wet screened.</p>
+                <p>
+                    When artifacts were found during the wet screening a S number was assigned.
+                </p>
             </div>
 
             <!-- Step 2 of the tutorial -->
             <div id="3" class="modal-body" style="display:none">
-                <!-- Tutorial text 4 here -->
+                <p>
+                    <strong>NOTE:</strong> At the end of the field season all the artifacts with FS and S numbers were
+                    renumbered with a catalogue number. This new catalogue number does not appear on the field
+                    excavation
+                    forms. By digitally compiling the information on these site catalogue forms, we will be able to
+                    link the artifacts listed on the excavation forms with the appropriate catalogue numbers.
+                </p>
+                <p>
+                    Eventually, the excavation forms and field photographs from each level, as well as the photographs
+                    of the artifacts found in each level will be available online for people to perform research on the
+                    collection.
+                </p>
             </div>
             <!-- End of stepped modal body -->
 
@@ -31,7 +69,8 @@
             <div class="modal-footer">
                 <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
                 <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
-                <a id="startContrib" data-dismiss="modal" href="../magicMountain" class="btn btn-primary" style="display:none"/><i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
+                <a id="startContrib" data-dismiss="modal" href="../magicMountain" class="btn btn-primary"
+                   style="display:none"/><i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
             </div>
         </div>
     </div>
@@ -61,4 +100,6 @@
     }
     showStep('next');
     $("#modal").modal('show');
+
+
 </script>
