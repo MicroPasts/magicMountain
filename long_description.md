@@ -24,4 +24,4 @@ assigned to each artifact after the field, the transcription of these forms is i
 
 [![](https://micropasts-other.s3.amazonaws.com/other/github_logo.png)](https://github.com/MicroPasts/magicMountain)
 
-![](https://micropasts-other.s3.amazonaws.com/other/InstituteDigitalArch-Logo-35.png =200x)
+![](https://micropasts-other.s3.amazonaws.com/other/InstituteDigitalArch-Logo-35.png)
