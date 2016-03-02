@@ -375,12 +375,12 @@ task.
 				evt.preventDefault();
 				var answer = $(evt.target).attr("value");
 				if ( typeof answer != 'undefined') {
-					task.answer = $("#rcData").serializeJSON();
+					task.answer = $("#magicData").serializeJSON();
 					console.log(task.answer);
 					var handsontable = $("#magicMountainTable").data('handsontable');
 					var data = handsontable.getData();
 					console.log(data);
-					task.answer = data;
+					task.answer.table = data;
 					task.answer.comments = $("#comments").val();
 					console.log(task.answer);
 					pybossa.saveTask(task.id, task.answer).done(function() {
